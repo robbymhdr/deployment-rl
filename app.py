@@ -204,7 +204,8 @@ if __name__ == '__main__':
 	Q_table_all = pickle.load(open('Q_table_Frozen_Lake.model', 'rb'))
 
 	# Run Flask di localhost 
-	app.run(host="localhost", port=5000, debug=True)
+	run_with_ngrok(app)
+	app.run()
 	
 	
 
